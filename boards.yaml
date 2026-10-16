@@ -265,3 +265,78 @@ waveshare43c:
   status: experimental
   # The 4.3's glass with Waveshare's CH32V003 expander in place of the CH422G (website discussion 10): a 4.3C built
   # from the 4.3's board file starts with its touch chip in reset.
+
+waveshare4v4:
+  file: waveshare-esp32s3-4v4.yaml
+  name: Waveshare
+  model: ESP32-S3-Touch-LCD-4 V4.0
+  status: experimental
+  # Revision 4.0, with Waveshare's CH32V003 expander (GitHub #275). Earlier revisions of the same name have a TCA9554
+  # expander instead, and this board file is not for them.
+
+sensecapd1:
+  file: seeed-sensecap-indicator-d1.yaml
+  name: SenseCAP
+  model: Indicator D1, D1S, D1L, D1Pro (GX)
+  status: experimental
+  # Seeed's SenseCAP Indicator D1 series with the GX panel (GitHub #277): the four models share the ESP32-S3 side.
+  # Tried on a D1L; the DX panel is not covered.
+
+freenovefnk0104s:
+  file: freenove-fnk0104s.yaml
+  name: Freenove
+  model: FNK0104S
+  status: experimental
+  # The 4-inch board of Freenove's ESP32-S3 display series (GitHub #285); its 2.8 and 3.5-inch boards are other glass.
+
+wt32sc01plus:
+  file: wt32sc01plus.yaml
+  name: WT32
+  model: WT32-SC01 Plus
+  status: experimental
+  # Wireless-Tag's WT32-SC01 Plus (GitHub #238), named WT32 as people call the series; not the WT32-SC01 without "Plus".
+
+wavesharep47b:
+  file: wavesharep47b.yaml
+  name: Waveshare
+  model: ESP32-P4-WIFI6-Touch-LCD-7B
+  status: experimental
+  # The ESP32-P4 7B with rev3 silicon (GitHub #271), not the ESP32-S3-Touch-LCD-7B. Its speaker and microphones are the
+  # Waveshare P4 86 panel's audio (docs/WAVESHAREP47B.md).
+  # Its extras under Screen settings, in this order (docs/SETTINGS.md, "A board's own settings").
+  settings: [media_player, microphone, microphone_gain, automatic_gain, echo_cancellation]
+
+wavesharep47:
+  file: wavesharep47.yaml
+  name: Waveshare
+  model: ESP32-P4-WIFI6-Touch-LCD-7
+  status: experimental
+  # The 7-inch 720 x 1280 board of the ESP32-P4-WIFI6-Touch-LCD 7, 8 and 10.1-inch series (GitHub #274), pre-v3 silicon.
+  # Not the 7B. Its speaker and microphones are the Waveshare P4 86 panel's audio (docs/WAVESHAREP47.md).
+  # Its extras under Screen settings, in this order (docs/SETTINGS.md, "A board's own settings").
+  settings: [media_player, microphone, microphone_gain, automatic_gain, echo_cancellation]
+
+waveshare101:
+  file: waveshare101.yaml
+  name: Waveshare
+  model: ESP32-P4-WIFI6-Touch-LCD-10.1
+  status: experimental
+  # The 10.1-inch board of the same series (GitHub #281), pre-v3 silicon, from a community configuration that runs on
+  # one (website wish 125). Its speaker and microphones are the Waveshare P4 86 panel's audio, not yet tried on it.
+  # Its extras under Screen settings, in this order (docs/SETTINGS.md, "A board's own settings").
+  settings: [media_player, microphone, microphone_gain, automatic_gain, echo_cancellation]
+
+waveshare43c:
+  file: waveshare43c.yaml
+  name: Waveshare
+  model: ESP32-S3-Touch-LCD-4.3C
+  status: experimental
+  # The 4.3's glass with Waveshare's CH32V003 expander in place of the CH422G (website discussion 10): a 4.3C built
+  # from the 4.3's board file starts with its touch chip in reset.
+
+freenovefnk0104B:
+  file: freenovefnk0104B.yaml
+  name: Freenove
+  model: FNK0104B
+  status: experimental
+  # The 2.8-inch board of Freenove's ESP32-S3 display series (GitHub #285); its 4 and 3.5-inch boards are other glass.
