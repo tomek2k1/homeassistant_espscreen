@@ -1,5 +1,4 @@
 packages:
-  # The ESP32-P4, its memory, the ESP32-C6 for Wi-Fi and the touch bus, pin for pin the other Waveshare P4 panels'.
   hardware: !include ../hardware/esp-idf.yaml
   look: !include ../looks/standard.yaml
   touch: !include ../features/capacitive-touch.yaml
@@ -57,10 +56,9 @@ substitutions:
 # ============================================================
 
 esp32:
-  board: esp32dev
   framework:
     type: esp-idf
-  variant: esp32
+  variant: esp32s3
 
 i2c:
   - id: touch_bus
