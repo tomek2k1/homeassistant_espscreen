@@ -25,6 +25,7 @@ substitutions:
   # true on this board (resistive XPT2046) — was false on the 032c board
   # (capacitive GT911). This is the original upstream value for this panel.
   TOUCH_MIRROR_X: "true"
+  TOUCH_MIRROR_Y: "true"
   # The tile grid: columns and rows of cells. The shared tree places every cell from these
   # (runtime_tiles::place_page).
   GRID_COLS: "2"
