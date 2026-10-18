@@ -5,6 +5,7 @@ packages:
   backlight: !include ../features/backlight.yaml
   self_test: !include ../features/self-test.yaml
   snapshot: !include ../features/snapshot.yaml
+  camera: !include ../features/camera.yaml
   
 substitutions:
   BOARD_ID: "freenovefnk0104B"
