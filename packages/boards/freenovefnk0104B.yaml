@@ -17,7 +17,7 @@ substitutions:
   PANEL_W: "240"
   PANEL_H: "320"
   #DISPLAY_DPI: "143"
-  DISPLAY_DPI: "120"
+  DISPLAY_DPI: "100"
   # The LVGL angle that lays this panel out lying down (320 x 240). Standing up is a quarter further.
   ROTATION_LANDSCAPE: "90"
   # The tile grid: columns and rows of cells. The shared tree places every cell from these
