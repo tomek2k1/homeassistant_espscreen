@@ -5,7 +5,6 @@ packages:
   backlight: !include ../features/backlight.yaml
   self_test: !include ../features/self-test.yaml
   snapshot: !include ../features/snapshot.yaml
-  led: !include ../features/rgb-led.yaml
   
 substitutions:
   BOARD_ID: "freenovefnk0104B"
